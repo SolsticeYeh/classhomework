@@ -11,7 +11,11 @@ namespace hwk
     {
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            return value.ToString() + "牌";
+            if((String)value!="")
+                return value.ToString() + "牌";
+            else
+                return value.ToString();
+
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, string language)

@@ -37,8 +37,7 @@ namespace hwk
         public ObservableCollection<Card> mcarobservableCollection = new ObservableCollection<Card>();
         private void add_Click(object sender, RoutedEventArgs e)
         {
-            if (he.Text == "") { } 
-            else
+            if (he.Text != "") 
             {
                 mcarobservableCollection.Add(new Card { Name = he.Text });
                 mListView.ItemsSource = mcarobservableCollection;
