@@ -11,7 +11,7 @@
         <local:iConverter x:Key="iConverter" />
     </Page.Resources>
     <StackPanel >
-        <TextBlock Name="ha" Text="{Binding Text, Converter={StaticResource iConverter}, ElementName=he}" FontSize="30"> </TextBlock>
+        <TextBlock Text="{Binding Text, Converter={StaticResource iConverter}, ElementName=he}" FontSize="30"> </TextBlock>
         <TextBox Name="he" FontSize="30"></TextBox>
         <Button Name="add" Content="添加" Click="add_Click"></Button>
         <ListView Name="mListView" IsItemClickEnabled="True" ItemClick="mListView_ItemClick">
